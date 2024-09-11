@@ -11,6 +11,7 @@ export default function CryptoSearchForm() {
     })
     const [error, setError] = useState('')
     const cryptoCurrencies = useCryptoStore((state) => state.cryptoCurrencies)
+    const fetchData = useCryptoStore((state) => state.fetchData)
 
     const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
         setPair({
@@ -27,7 +28,8 @@ export default function CryptoSearchForm() {
         }
 
         setError('')
-        
+        fetchData(pair)
+
 
 
     }

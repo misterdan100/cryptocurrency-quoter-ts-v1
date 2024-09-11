@@ -97,3 +97,45 @@ body {
   color: red;
   text-align: center;
 }
+
+.result-wrapper {
+  margin-top: 3rem;
+}
+
+.result-wrapper h2 {
+  text-align: center;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* justify-items: center; */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.result .img-container {
+  width: 100%;
+  display: grid;
+  justify-items: end;
+  
+}
+
+.result img {
+  max-width: 160px;
+}
+
+.result details {
+  width: 100%;
+  /* display: grid; */
+}
+
+.result p {
+ margin: 0 0 1rem;
+ font-size: 1.6rem;
+}
+
+.result span {
+  font-weight: 700;
+}
