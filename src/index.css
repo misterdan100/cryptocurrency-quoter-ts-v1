@@ -1,0 +1,94 @@
+:root {
+  --white: #fff;
+  --primary: #61ecbc;
+  --black: #182339;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  /* to use rem at the same size of pixels */
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url('/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Exo 2", sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 3.8rem;
+  padding-top: 5rem;
+  color: var(--white);
+  /* line-height: 1; */
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.app-title span {
+  display: block;
+  color: var(--primary);
+  font-size: 4.4rem;
+}
+
+.content {
+  margin-top: 2rem;
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid var(--white);
+}
+
+/* form section */
+.form, .field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form label {
+  color: var(--black);
+}
+
+.form select {
+  background-color: #ecebeb;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.form [type='submit'] {
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  padding: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #45b68e;
+  transition: all 0.4s;
+}
+
+.form [type='submit']:hover {
+  background: #68ffca;
+}
